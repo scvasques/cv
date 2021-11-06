@@ -1,5 +1,10 @@
 <html>
 <body>
-  <video src="resources/rick.mp4" autoplay loop style="width:100%"></video>
+  <video id="rick" src="resources/rick.mp4" loop style="width:100%"></video>
+  <script>
+    document.onLoad = function() {
+      document.getElementById("rick").play();
+    };
+  </script>
 </body>
 </html>
